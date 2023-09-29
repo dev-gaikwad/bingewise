@@ -1,10 +1,7 @@
-body {
-  font-size: 16px;
-}
 header {
   width: 100vw;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   position: fixed;
   top: 0;
@@ -12,8 +9,13 @@ header {
   background-color: var(--background-strong);
   height: 4em;
   z-index: 10;
-  padding-inline: 1.5em;
   color: var(--primary-color);
+}
+
+.navbar-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 nav {
@@ -124,8 +126,5 @@ nav {
   }
   .menu-container {
     display: block;
-  }
-  header {
-    padding-inline: 4em;
   }
 }

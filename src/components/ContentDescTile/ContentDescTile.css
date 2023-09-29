@@ -1,3 +1,61 @@
 .card-style-1 {
-  width: 220px;
+  margin-inline: 16px;
+  width: 150px;
+  min-width: 150px;
+}
+
+.card-style-1-img {
+  border-radius: 8px;
+}
+
+.card-style-1-content {
+  position: relative;
+  padding: 10px;
+}
+
+.card-style-1-content .rating-wrapper {
+  font-size: 14px;
+  padding: 5px;
+  max-width: fit-content;
+  position: absolute;
+  top: -16px;
+  left: 10px;
+  border-radius: 4px;
+  background-color: var(--background-strong);
+}
+
+.card-style-1-content .rating-wrapper.high {
+  color: palegreen;
+}
+
+.card-style-1-content .rating-wrapper.avg {
+  color: orange;
+}
+.card-style-1-content .rating-wrapper.subpar {
+  color: goldenrod;
+}
+
+.card-style-1-content .rating-wrapper.low {
+  color: orangered;
+}
+
+.info-container {
+  margin-top: 10px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.info-container > p {
+  display: inline-block;
+}
+
+.sub-info-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sub-info-container p {
+  color: var(--secondary-text);
 }

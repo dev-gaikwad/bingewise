@@ -24,8 +24,7 @@ body {
 }
 
 main {
-  margin-top: 4rem;
-  padding: 1rem 2rem;
+  margin-top: 5rem;
 }
 
 a {
@@ -60,4 +59,70 @@ button.btn-primary {
 
 button.btn-primary:hover {
   background-color: var(--light-primary);
+}
+section {
+  margin-block-start: 2em;
+}
+
+section .column-header {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+section .section-heading {
+  margin-block: 16px;
+  padding-inline-start: 16px;
+}
+
+select {
+  padding: 0.5em 1em;
+  height: fit-content;
+  background-color: var(--background-strong);
+  color: var(--primary-color);
+  border-radius: 10px;
+}
+
+.container {
+  max-width: 1050px;
+  width: 90%;
+  margin-inline: auto;
+}
+
+.flex-x-scroller {
+  display: flex;
+  flex-grow: 1;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+}
+
+.flex-x-scroller::-webkit-scrollbar {
+  width: 10px;
+}
+
+.flex-x-scroller::-webkit-scrollbar-button {
+  display: none;
+}
+
+.flex-x-scroller::-webkit-scrollbar-track {
+  border: none;
+  /* background-color: var(--background-strong); */
+}
+
+.flex-x-scroller::-webkit-scrollbar-track-piece {
+  /* background-color: var(--background-strong); */
+  border-radius: 10px;
+}
+
+.flex-x-scroller::-webkit-scrollbar-thumb {
+  background-color: var(--background-weak);
+  border-radius: 10px;
+  width: 6px;
+  height: 20px;
+}
+
+.media-type-icon {
+  display: inline-block;
+  padding: 2px;
+  border: 2px solid inherit;
 }
